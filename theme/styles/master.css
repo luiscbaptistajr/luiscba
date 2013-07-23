@@ -1,269 +1,59 @@
-body {
-  padding: 20px;
-}
+@charset "UTF-8";
+/* ===============
+   BASIC LAYOUT
+   =============== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
 
-.rounded-corners-default, .clearfix {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  width: 100px;
-  height: 100px;
-  display: block;
-  background-color: #E1E1E1;
-}
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  background: url(../images/main-bg.jpg) repeat-x #ecedec;
+  overflow: hidden; }
 
-.rounded-corners-custom {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  display: block;
-  background-color: #E1E1E1;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-.anchor-link {
-  color: blue;
-}
-.anchor-link:link {
-  color: blue;
-}
-.anchor-link:hover {
-  color: green;
-}
-.anchor-link:visited {
-  color: violet;
-}
-.anchor-link:active {
-  color: red;
-}
-.anchor-link:focus {
-  color: orange;
-}
-
-.wrapper {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.wrapper .span-0, .wrapper .span-1, .wrapper .span-2, .wrapper .span-3, .wrapper .span-4, .wrapper .span-5, .wrapper .span-6, .wrapper .span-7, .wrapper .span-8, .wrapper .span-9, .wrapper .span-10, .wrapper .span-11, .wrapper .span-12 {
-  margin-left: 2.08333%;
-  float: left;
-}
-.wrapper .span-1 {
-  width: 6.25%;
-}
-.wrapper .span-2 {
-  width: 14.58333%;
-}
-.wrapper .span-3 {
-  width: 22.91667%;
-}
-.wrapper .span-4 {
-  width: 31.25%;
-}
-.wrapper .span-5 {
-  width: 39.58333%;
-}
-.wrapper .span-6 {
-  width: 47.91667%;
-}
-.wrapper .span-7 {
-  width: 56.25%;
-}
-.wrapper .span-8 {
-  width: 64.58333%;
-}
-.wrapper .span-9 {
-  width: 72.91667%;
-}
-.wrapper .span-10 {
-  width: 81.25%;
-}
-.wrapper .span-11 {
-  width: 89.58333%;
-}
-.wrapper .span-12 {
-  width: 97.91667%;
-}
-.wrapper .row {
-  margin-left: -2.08333%;
-}
-
-.row {
-  *zoom: 1;
-  margin-bottom: 10px;
-}
-.row:before, .row:after {
-  content: "";
-  display: table;
-}
-.row:after {
-  clear: both;
-}
-
-[class*=span] {
-  height: 30px;
-  display: block;
-  background-color: #e1e1e1;
-}
-
-.main {
-  *zoom: 1;
-}
-.main:before, .main:after {
-  content: "";
-  display: table;
-}
-.main:after {
-  clear: both;
-}
-
-/* Start Styles for Terms of Use and Privacy Content */
-
-/* Start ABS-CBN Terms and Privacy */
-.abs-cbn-terms, .abs-cbn-privacy {
-   margin: 0px;
-   padding: 5px;
-   font-size: 12px;
-   line-height: 16px;
-}
-
-.abs-cbn-terms h2, .abs-cbn-privacy h2 {
-   font-size: 14px;
-}
-
-.abs-cbn-terms ol.roman {
-   margin: 5px;
-   padding: 0px;
-   list-style: lower-roman inside;
-}
-
-.abs-cbn-terms ol.roman li {
-   margin: 0px;
-   padding: 5px;
-}
-
-.abs-cbn-terms ol.bullet {
-   margin: 5px;
-   padding: 0px;
-   list-style: disc inside;
-}
-
-.abs-cbn-terms ol.bullet li {
-   margin: 0px;
-   padding: 5px;
-}
-
-.abs-cbn-terms ol.alpha {
-   margin: 5px;
-   padding: 0px;
-   list-style: lower-alpha inside;
-}
-
-.abs-cbn-terms ol.alpha li {
-   margin: 0px;
-   padding: 5px;
-}
-/* End ABS-CBN Terms and Privacy */
-
-/* Start ABS-CBN News Terms and Privacy */
-.abs-cbn-news-tp {
-   margin: 0px;
-   padding: 5px;
-   font-size: 12px;
-   line-height: 16px;
-}
-
-.abs-cbn-news-tp ul li {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
-  list-style: decimal;
-}
-
-.abs-cbn-news-tp ul li h2 {
-  display: inline-block;
-  margin-left: -25px;
-  margin-right: 0px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0px;
-  font-size: 13px;
-}
-
-.abs-cbn-news-tp ul li ol li {
-  margin: 5px;
-  padding: 0px;
-  list-style: lower-roman;
-}
-
-.abs-cbn-news-tp ul li ol ol li {
-  margin: 5px;
-  padding: 0px;
-  list-style: disc;
-}
-
-.abs-cbn-news-tp .privacy-data {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+/* Header */
+#header {
   padding: 10px;
-  list-style: decimal;
-}
+  background: #c05533; }
+  #header .main {
+    width: 980px; }
+    #header .main .social-media {
+      width: 155px;
+      height: 50px; }
+      #header .main .social-media ul {
+        list-style: none; }
+        #header .main .social-media ul li {
+          float: left; }
 
-.abs-cbn-news-tp .privacy-data li {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
-  list-style: decimal;
-}
+/* Left Sidebar */
+/* Right Sidebar */
+/* Footer */
+/* ===============
+   NAVIGATION
+   =============== */
+/* Primary */
+/* Secondary */
+/* Breadcrumbs */
+/* Footer */
+#footer {
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #c05533; }
+  #footer p {
+    margin: 0; }
 
-.abs-cbn-news-tp .privacy-data li h2 {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-
-.abs-cbn-news-tp .privacy-data li p {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-
-.abs-cbn-news-tp .privacy-data li ul li {
-  list-style: disc;
-}
-
-.abs-cbn-news-tp .privacy-data li ul li h2 {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-/* End ABS-CBN News Terms and Privacy */
-
-/* End Styles for Terms of Use and Privacy Content */
+/* ===============
+   CONTENT
+   =============== */
+#content {
+  padding: 10px;
+  padding-bottom: 12px; }
+  #content .main .article-section {
+    width: 350px; }
+    #content .main .article-section .article-content .article-on-hover {
+      display: none; }
