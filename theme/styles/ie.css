@@ -2,3 +2,5 @@
    IE Specific Styles
    Loaded via <!--[IF IE]> conditional comment.
    ========================================================================== */
+
+   #wrapper { height: 100%; }
