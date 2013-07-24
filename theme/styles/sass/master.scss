@@ -13,29 +13,100 @@ html, body {
 #wrapper {
 	min-height: 100%;
 	position: relative;
-	background: url(../images/main-bg.jpg) repeat-x #ecedec;
+	background: url(../images/main-bg.jpg) repeat-x #f1f1f1;
 	overflow: hidden;
 }
 
 /* Header */
 
 #header {
-	padding: 10px;
+	padding: 0 10px;
 	background: #c05533;
+	height: 10px;
+	position: fixed;
+	width: 100%;
 
 	.main {
 		width: 980px;
+		position: relative;
+		margin: 0 auto;
 
 		.social-media {
-			width: 155px;
-			height: 50px;
+			width: 145px;
+			height: 40px;
+			padding: 5px;
+			display: block;
+			float: left;
+			background: #c08181;
+			position: absolute;
+			top: 0;
+			right: 0;
 
 			ul {
 				
 				list-style: none;
+				margin: 0;
+				padding: 0;
 
 				li {
 					float: left;
+					margin-left: 5px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+
+					a {
+						&#icon-fb {
+							background: url(../../sprite_sheet.png) no-repeat 0 0;
+							display: block;
+							width: 30px;
+							height: 30px;
+							text-indent: -999em;
+							overflow: hidden;
+
+							&:hover {
+								background: url(../../sprite_sheet.png) no-repeat -72px 0;
+							}
+						}
+
+						&#icon-tw {
+							background: url(../../sprite_sheet.png) no-repeat -36px 0;
+							display: block;
+							width: 30px;
+							height: 30px;
+							text-indent: -999em;
+							overflow: hidden;
+
+							&:hover {
+								background: url(../../sprite_sheet.png) no-repeat -108px 0;
+							}
+						}
+
+						&#icon-insta {
+							background: url(../../sprite_sheet.png) no-repeat 0 -36px;
+							display: block;
+							width: 30px;
+							height: 30px;
+							text-indent: -999em;
+							overflow: hidden;
+
+							&:hover {
+								background: url(../../sprite_sheet.png) no-repeat -72px -36px;
+							}
+						}
+
+						&#icon-linked {
+							background: url(../../sprite_sheet.png) no-repeat -36px -36px;
+							display: block;
+							width: 30px;
+							height: 30px;
+							text-indent: -999em;
+							overflow: hidden;
+
+							&:hover {
+								background: url(../../sprite_sheet.png) no-repeat -108px -36px;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -85,14 +156,35 @@ html, body {
 	padding-bottom: 12px;
 
 	.main {
+		width: 980px;
+		margin: 0 auto;
+
 		.article-section {
-			width: 350px;
+			width: 330px;
+			float: left;
+			margin: 10px;
 
 			.article-content {
 
 				.article-on-hover {
 					display: none;
 				}
+			}
+		}
+	}
+
+	.nav-prev-next {
+		position: relative;
+
+		a {
+			&#nav-prev {
+				position: absolute;
+				left: 0;
+			}
+
+			&#nav-next {
+				position: absolute;
+				right: 0;
 			}
 		}
 	}

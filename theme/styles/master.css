@@ -10,22 +10,75 @@ html, body {
 #wrapper {
   min-height: 100%;
   position: relative;
-  background: url(../images/main-bg.jpg) repeat-x #ecedec;
+  background: url(../images/main-bg.jpg) repeat-x #f1f1f1;
   overflow: hidden; }
 
 /* Header */
 #header {
-  padding: 10px;
-  background: #c05533; }
+  padding: 0 10px;
+  background: #c05533;
+  height: 10px;
+  position: fixed;
+  width: 100%; }
   #header .main {
-    width: 980px; }
+    width: 980px;
+    position: relative;
+    margin: 0 auto; }
     #header .main .social-media {
-      width: 155px;
-      height: 50px; }
+      width: 145px;
+      height: 40px;
+      padding: 5px;
+      display: block;
+      float: left;
+      background: #c08181;
+      position: absolute;
+      top: 0;
+      right: 0; }
       #header .main .social-media ul {
-        list-style: none; }
+        list-style: none;
+        margin: 0;
+        padding: 0; }
         #header .main .social-media ul li {
-          float: left; }
+          float: left;
+          margin-left: 5px;
+          margin-top: 5px;
+          margin-bottom: 5px; }
+          #header .main .social-media ul li a#icon-fb {
+            background: url(../../sprite_sheet.png) no-repeat 0 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-indent: -999em;
+            overflow: hidden; }
+            #header .main .social-media ul li a#icon-fb:hover {
+              background: url(../../sprite_sheet.png) no-repeat -72px 0; }
+          #header .main .social-media ul li a#icon-tw {
+            background: url(../../sprite_sheet.png) no-repeat -36px 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-indent: -999em;
+            overflow: hidden; }
+            #header .main .social-media ul li a#icon-tw:hover {
+              background: url(../../sprite_sheet.png) no-repeat -108px 0; }
+          #header .main .social-media ul li a#icon-insta {
+            background: url(../../sprite_sheet.png) no-repeat 0 -36px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-indent: -999em;
+            overflow: hidden; }
+            #header .main .social-media ul li a#icon-insta:hover {
+              background: url(../../sprite_sheet.png) no-repeat -72px -36px; }
+          #header .main .social-media ul li a#icon-linked {
+            background: url(../../sprite_sheet.png) no-repeat -36px -36px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-indent: -999em;
+            overflow: hidden; }
+            #header .main .social-media ul li a#icon-linked:hover {
+              background: url(../../sprite_sheet.png) no-repeat -108px -36px; }
 
 /* Left Sidebar */
 /* Right Sidebar */
@@ -53,7 +106,20 @@ html, body {
 #content {
   padding: 10px;
   padding-bottom: 12px; }
-  #content .main .article-section {
-    width: 350px; }
-    #content .main .article-section .article-content .article-on-hover {
-      display: none; }
+  #content .main {
+    width: 980px;
+    margin: 0 auto; }
+    #content .main .article-section {
+      width: 330px;
+      float: left;
+      margin: 10px; }
+      #content .main .article-section .article-content .article-on-hover {
+        display: none; }
+  #content .nav-prev-next {
+    position: relative; }
+    #content .nav-prev-next a#nav-prev {
+      position: absolute;
+      left: 0; }
+    #content .nav-prev-next a#nav-next {
+      position: absolute;
+      right: 0; }
