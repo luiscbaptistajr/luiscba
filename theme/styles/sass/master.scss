@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "_typography.scss";
 
 /* ===============
    BASIC LAYOUT
@@ -140,9 +141,19 @@ html, body {
 	bottom: 0;
 	background: #c05533;
 
-	p {
-		margin: 0;
+	.main {
+		width: 980px;
+		margin: 0 auto;
+		
+		p {
+			margin: 0;
+			text-align: center;
+			font-size: 10px;
+			color: #f1f1f1;
+			font-weight: normal;
+		}
 	}
+
 }
 
 
@@ -154,27 +165,44 @@ html, body {
 #content {
 	padding: 10px;
 	padding-bottom: 12px;
+	position: relative;
 
 	.main {
-		width: 980px;
+		width: 1000px;
 		margin: 0 auto;
 
-		.article-section {
-			width: 330px;
-			float: left;
-			margin: 10px;
+		.article-container {
+			
+			> .article-wrapper {
+				float: left;
+				position: relative;
+				width: 50%;
+				height: 100%;
+				top: 0;
 
-			.article-content {
 
-				.article-on-hover {
-					display: none;
+				.article-section {
+					width: 330px;
+					float: left;
+					margin: 10px;
+
+					.article-content {
+
+						.article-on-hover {
+							display: none;
+						}
+					}
 				}
+
+
 			}
+
 		}
+
+		
 	}
 
 	.nav-prev-next {
-		position: relative;
 
 		a {
 			&#nav-prev {
