@@ -3,7 +3,7 @@
 
 // GLOBAL
 body {
-	font-family: "Lucida Sans";
+	
 }
 
 // HEADINGS
@@ -12,7 +12,14 @@ h1 {
 }
 
 h2 {
-	
+	&.h2-font {
+		font-family: $heading-font;
+	}
+
+	&.article-title {
+		font-size: 24px;
+		color: #010101;
+	}
 }
 
 h3 {
@@ -26,7 +33,7 @@ h4 {
 
 // ANCHORS
 a {
-	
+	text-decoration: none;	
 }
 
 a:link {
@@ -83,7 +90,21 @@ td {
 
 // CONTENT
 p {
-	
+	&.p-font {
+		font-family: $reading-font;
+	}
+
+	&.blogger-name {
+		font-size: 12px;
+		color: #b54a2c;
+		text-transform: uppercase;
+	}
+
+	&.article-write-up {
+		font-size: 14px;
+		color: #666666;
+		line-height: 1.5;
+	}	
 }
 
 span {

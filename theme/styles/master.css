@@ -1,6 +1,30 @@
 @charset "UTF-8";
-body {
-  font-family: "Lucida Sans"; }
+@font-face {
+  font-family: "bebas_neueregular";
+  src: url("lib/font/bebasneue-webfont.eot");
+  src: url("lib/font/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("lib/font/bebasneue-webfont.woff") format("woff"), url("lib/font/bebasneue-webfont.ttf") format("truetype"), url("lib/font/bebasneue-webfont.svg#bebasneue-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+h2.h2-font {
+  font-family: "bebas_neueregular", Georgia; }
+h2.article-title {
+  font-size: 24px;
+  color: #010101; }
+
+a {
+  text-decoration: none; }
+
+p.p-font {
+  font-family: Helvetica; }
+p.blogger-name {
+  font-size: 12px;
+  color: #b54a2c;
+  text-transform: uppercase; }
+p.article-write-up {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5; }
 
 /* ===============
    BASIC LAYOUT

@@ -1,6 +1,8 @@
+@import "../lib/mixins.scss";
+
+@include font-face("bebas_neueregular", "bebasneue-webfont");
 
 // FONT FAMILIES // note: refer to Big Book of Font Combinations for type pairing
-$heading-font: Georgia;
-$reading-font: Arial;
-$alternative-font: Verdana;
-
+$heading-font: "bebas_neueregular", Georgia;
+$reading-font: Helvetica;
+$alternative-font: Arial;
