@@ -10,5 +10,57 @@ $(document).ready(function () {
 
 	$('.article-container > div').addClass('article-wrapper');
 
-	console.log(articleArrLen);
+
+	$('.article-container .article-wrapper:first').before($('.article-container .article-wrapper:last'));
+
+	// when user clicks the arrow navigation for sliding right
+	$('#nav-prev').click(function(){
+		
+		// get the article width
+		var article_width = $('.article-container .article-wrapper').outerWidth();
+
+		// new left indent calculation of the article-container
+		var left_indent = parseInt($('.article-container').css('left')) + article_width;
+
+		// sliding effect using jquery animation function
+		$('.article-container:not(:animated)').animate(
+			
+			{'left': left_indent}, 500,
+			
+			function() {
+				// get the first list item and put it to the last item
+				$('.article-container .article-wrapper:first').after($('.article-container .article-wrapper:last'));
+
+				// get the left indent to the default -350px
+				$('.article-container').css({'left': '-350px'});
+			}
+		);
+
+		console.log(article_width);
+	});
+
+	// when user clicks the arrow navigation for sliding left
+	$('#nav-next').click(function(){
+
+		// get the article width
+		var article_width = $('.article-container .article-wrapper').outerWidth();
+
+		// new right indent calculation of the article container
+		var left_indent = parseInt($('.article-container').css('left')) - article_width;
+
+		// sliding effect using jquery animation but this time going right
+		$('.article-container:not(:animated)').animate(
+
+			{'left': left_indent}, 500,
+
+			function() {
+				$('.article-container .article-wrapper:last').before($('.article-container .article-wrapper:first'));
+				$('.article-container').css({'left': '-350px'});
+			}
+			
+		);
+
+	});
+
+	// console.log(articleArrLen);
 });

@@ -16,6 +16,7 @@ html, body {
 	position: relative;
 	background: url(../images/main-bg.jpg) repeat-x #f1f1f1;
 	overflow: hidden;
+	position: relative;
 }
 
 /* Header */
@@ -26,6 +27,7 @@ html, body {
 	height: 10px;
 	position: fixed;
 	width: 100%;
+	z-index: 10;
 
 	.main {
 		width: 980px;
@@ -166,18 +168,24 @@ html, body {
 	padding: 10px;
 	padding-bottom: 12px;
 	position: relative;
+	width: 1000px;
+	margin: 0 auto;
 
 	.main {
 		width: 1000px;
 		margin: 0 auto;
+		overflow: hidden;
 
 		.article-container {
+			width: 999em;
+			position: relative;
+			left: -350px;
+			overflow: hidden;
 			
 			> .article-wrapper {
 				float: left;
 				position: relative;
-				width: 50%;
-				height: 100%;
+				width: 350px;
 				top: 0;
 
 
@@ -202,17 +210,41 @@ html, body {
 		
 	}
 
-	.nav-prev-next {
+}
 
-		a {
-			&#nav-prev {
-				position: absolute;
-				left: 0;
+.nav-prev-next {
+
+	a {
+		&#nav-prev {
+			position: fixed;
+			left: 0;
+			top: 50%;
+			background: url(../../sprite_sheet.png) no-repeat 0 -72px;
+			width: 50px;
+			height: 50px;
+			text-indent: -999em;
+			display: block;
+			margin-left: 5%;
+
+			&:hover {
+				background: url(../../sprite_sheet.png) no-repeat 0 -144px;
 			}
+		}
 
-			&#nav-next {
-				position: absolute;
-				right: 0;
+		&#nav-next {
+			position: fixed;
+			right: 0;
+			top: 50%;
+			float: left;
+			background: url(../../sprite_sheet.png) no-repeat -72px -72px;
+			width: 50px;
+			height: 50px;
+			text-indent: -999em;
+			display: block;
+			margin-right: 5%;
+
+			&:hover {
+				background: url(../../sprite_sheet.png) no-repeat -72px -144px;
 			}
 		}
 	}
