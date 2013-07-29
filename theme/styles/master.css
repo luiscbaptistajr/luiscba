@@ -17,7 +17,9 @@ a {
 
 p.p-font {
   font-family: Helvetica; }
-p.blogger-name {
+p.article-read-more {
+  font-family: "bebas_neueregular", Georgia; }
+p.blogger-name, p.article-read-more {
   font-size: 12px;
   color: #b54a2c;
   text-transform: uppercase; }
@@ -48,7 +50,7 @@ html, body {
   height: 10px;
   position: fixed;
   width: 100%;
-  z-index: 10; }
+  z-index: 11; }
   #header .main {
     width: 980px;
     position: relative;
@@ -147,7 +149,7 @@ html, body {
   margin: 0 auto; }
   #content .main {
     width: 1000px;
-    margin: 0 auto;
+    margin: 10px auto;
     overflow: hidden; }
     #content .main .article-container {
       width: 999em;
@@ -161,10 +163,41 @@ html, body {
         top: 0; }
         #content .main .article-container > .article-wrapper .article-section {
           width: 330px;
-          float: left;
-          margin: 10px; }
-          #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover {
-            display: none; }
+          height: 250px;
+          float: left; }
+          #content .main .article-container > .article-wrapper .article-section .article-content {
+            position: relative;
+            display: block; }
+            #content .main .article-container > .article-wrapper .article-section .article-content .blogger-name, #content .main .article-container > .article-wrapper .article-section .article-content .article-title {
+              z-index: 10;
+              position: relative; }
+            #content .main .article-container > .article-wrapper .article-section .article-content .blogger-name {
+              margin: 0; }
+            #content .main .article-container > .article-wrapper .article-section .article-content .article-title {
+              margin: 10px 0; }
+            #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover {
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 0; }
+              #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover img.article-image {
+                position: relative; }
+              #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover .article-date-post, #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover .article-read-more {
+                position: absolute;
+                bottom: 0;
+                right: 10px; }
+              #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover .article-date-post {
+                background: url(../../sprite_sheet.png) no-repeat -144px 0;
+                display: block;
+                width: 50px;
+                height: 50px;
+                text-indent: -999em;
+                overflow: hidden; }
+              #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover .article-read-more {
+                margin-right: 60px;
+                height: 50px;
+                line-height: 50px; }
 
 .nav-prev-next a#nav-prev {
   position: fixed;

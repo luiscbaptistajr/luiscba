@@ -36,7 +36,6 @@ $(document).ready(function () {
 			}
 		);
 
-		console.log(article_width);
 	});
 
 	// when user clicks the arrow navigation for sliding left
@@ -62,5 +61,16 @@ $(document).ready(function () {
 
 	});
 
-	// console.log(articleArrLen);
+	// $('.article-content').each(function(index, value){
+	// 	// $('.article-on-hover').show();
+	// 	console.log('article' + index);
+	// });
+
+	$('.article-content').hover(
+	function() {
+		$('.article-on-hover').show();
+	}, function() {
+		$('.article-on-hover').show();
+	});
+
 });
