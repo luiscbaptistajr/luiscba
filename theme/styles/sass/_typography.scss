@@ -94,7 +94,11 @@ p {
 		font-family: $reading-font;
 	}
 
-	&.blogger-name {
+	&.article-read-more {
+		font-family: $heading-font;
+	}
+
+	&.blogger-name, &.article-read-more {
 		font-size: 12px;
 		color: #b54a2c;
 		text-transform: uppercase;
@@ -104,7 +108,8 @@ p {
 		font-size: 14px;
 		color: #666666;
 		line-height: 1.5;
-	}	
+	}
+
 }
 
 span {
