@@ -66,11 +66,55 @@ $(document).ready(function () {
 	// 	console.log('article' + index);
 	// });
 
-	$('.article-content').hover(
-	function() {
-		$('.article-on-hover').show();
-	}, function() {
-		$('.article-on-hover').show();
+	// $(".article-content").hover(
+	// 	function(){
+	// 		$('.article-on-hover').addClass('article-hover-active');
+
+	// 	},
+	// 	function(){
+	// 		$('.article-on-hover').removeClass('article-hover-active');
+	// 	}
+	// );
+
+	$.each($('.article-content'), function(index){
+
+		// $(this).hover(
+		// 	function(){
+		// 		$('.article-on-hover').stop(true, true).show();
+		// 	}, function(){
+		// 		$('.article-on-hover').stop(true, true).hide();
+		// 	}
+
+		// );
+		$(this).hover(function(){
+			$('.article-on-hover').addClass('article-hover-active');
+			// console.log('article' + index);
+		});
+
 	});
+
+	// $(".article-content").hover(
+	// 	function(){
+	// 		$('.article-on-hover')
+	// 			.stop(true, true)
+	// 			.show();
+
+	// 	}, function(){
+	// 		$('.article-on-hover')
+	// 			.stop(true, true)
+	// 			.hide();
+	// 	}
+
+	// );
+
+	// $('.article-content').hover(
+	// 	function(){
+
+	// });
+
+	// $.each($(".article-content"),function(index){
+	// 	console.log('article:' + index);
+	// });
+
 
 });
