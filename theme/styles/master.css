@@ -176,11 +176,7 @@ html, body {
             #content .main .article-container > .article-wrapper .article-section .article-content .article-title {
               margin: 10px 0; }
             #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover {
-              display: none;
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: 0; }
+              display: none; }
               #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover img.article-image {
                 position: relative; }
               #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover .article-date-post, #content .main .article-container > .article-wrapper .article-section .article-content .article-on-hover .article-read-more {
@@ -198,6 +194,11 @@ html, body {
                 margin-right: 60px;
                 height: 50px;
                 line-height: 50px; }
+            #content .main .article-container > .article-wrapper .article-section .article-content .article-hover-active {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 0; }
 
 .nav-prev-next a#nav-prev {
   position: fixed;

@@ -215,10 +215,6 @@ html, body {
 
 						.article-on-hover {
 							display: none;
-							position: absolute;
-							top: 0;
-							left: 0;
-							z-index: 0;
 
 							img {
 								&.article-image {
@@ -246,6 +242,13 @@ html, body {
 								height: 50px;
 								line-height: 50px;
 							}
+						}
+
+						.article-hover-active {
+							position: absolute;
+							top: 0;
+							left: 0;
+							z-index: 0;
 						}
 					}
 				}
